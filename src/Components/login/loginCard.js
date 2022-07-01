@@ -1,4 +1,4 @@
-import styles from "../app.module.css";
+import styles from "../../Styling/login.module.css";
 
 function LoginCard() {
   return (

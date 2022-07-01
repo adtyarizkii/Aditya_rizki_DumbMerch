@@ -1,5 +1,5 @@
-import styles from "../app.module.css";
-import dumbmerch from "../Images/frame.png";
+import styles from "../../Styling/login.module.css";
+import dumbmerch from "../../Images/frame.png";
 
 function LoginContent() {
   return (
