@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    background-color: black;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.homeContent{
+    width: 100%
+}
+
+.productTitle{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    color: #F74D4D;
+}
+
+.productTitle h1{
+    font-weight: bold;
+    font-size: 1.5rem
+}
+
+.productHeader{
+    display: flex;
+    gap: 1rem;
+    width: 86%;
+    margin: auto;
+    height: 22rem;
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+
+.productCard{
+    width: 13rem;
+    border-radius: 0.4rem;
+    border: none;
+    height: 22rem;
+    overflow: hidden;
+    background-color: rgb(17, 17, 17)
+}
+
+.productImage img{
+    width: 100%;
+    object-fit: cover;
+    height: 16rem;
+}
+
+.productName{
+    margin-top: 0.2rem;
+    height: 1.8rem;
+    overflow: hidden
+}
+
+.productName h2{
+    position: relative;
+    top: 0.5rem;
+    left: 0.8rem;
+    font-size: 1rem;
+    color: #F74D4D;
+    font-weight: bold;
+}
+
+.productDetail{
+    display:flex;
+    margin-top: 1rem;
+    padding-left: 0.8rem;
+    color: white;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.productDetail{
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 320px){
+.productTitle{
+    position: absolute;
+    width: 100%;
+    left: 1.2rem;
+    top: 8rem;
+    margin: 0;
+}
+
+.productHeader{
+    width: 100%;
+    position: absolute;
+    top: 10rem;
+    left: 0%;
+    padding: 0rem 1rem;
+}
+
+.productCard{
+    position: relative;
+    height: 15rem;
+}
+
+.productImage img{
+    height: 8.5rem;
+}
+
+.productDetail{
+    position:relative;
+    bottom: 0%;
+}
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+    
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    
+}

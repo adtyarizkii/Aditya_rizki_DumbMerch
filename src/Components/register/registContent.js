@@ -1,10 +1,27 @@
-import RegistContent from "../login/loginContent"
+import styles from "../../Styling/regist.module.css";
+import dumbmerch from "../../Images/frame.png";
+// import {Link} from 'react-router-dom'
 
-function RegContent(){
 
-    return(
-        <RegistContent/>
-    )
+function RegContent() {
+  return (
+    <div className={styles.loginContent}>
+      <div className={styles.contentLogo}>
+        <img src={dumbmerch} alt="Dumbmerch logo" />
+      </div>
+      <div className={styles.contentHeading}>
+        <h1>Easy, Fast and Reliable</h1>
+      </div>
+      <div className={styles.contentDesc}>
+        <p>
+          Go shopping for merchandise, just go to dumb merch shopping. The
+          biggest merchadise in <b style={{ color: "white" }}>Indonesia</b>
+        </p>
+        <button className={styles.contentLogin}>Login</button>
+        <button className={styles.contentRegister}>Register</button>
+      </div>
+    </div>
+  );
 }
 
-export default RegContent
+export default RegContent;
