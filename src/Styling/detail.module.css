@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    background-color: black;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* .container{
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.detailContainer{
+    /* background-color: red; */
+    width: 80%;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    margin-top: 5rem;
+    height: 35rem;
+}
+
+.productDetail{
+    display: flex;
+    gap: 2rem
+}
+
+.productDetail .leftDetail img{
+    flex: 50%;
+    width: 90%;
+    height: 30rem;
+    object-fit: cover;
+    position: relative;
+    left: 3rem;
+    top: 2.5rem
+}
+
+.productDetail .rightDetail{
+    flex: 50%;
+    font-size: 0.8rem;
+    position: relative;
+    right: 0;
+    top: 4.5rem
+}
+
+.productTitle{
+    color: white
+}
+
+.productTitle h1{
+    font-weight: bold;
+    color: #F74D4D
+}
+
+.productStock{
+    color: white
+}
+
+.productDetail .rightDetail .productFeature ul {
+    margin-top: 1rem;
+    padding-left: 0rem !important
+}
+
+.productDetail .rightDetail .productFeature ul li{
+    list-style-type: none;
+    color: white;
+}
+
+.productDesc{
+    position: relative;
+    top: 3rem;
+
+}
+
+.productDesc p{
+    text-align: justify;
+    color: white;
+}
+
+.productPrice{
+    color: #F74D4D;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+    top: 7rem;
+    left: 32rem
+}
+
+.container button{
+    background-color:#F74D4D;
+    padding: 0.5rem 19rem;
+    position: absolute;
+    right: 9rem;
+    border-radius: 0.4rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
