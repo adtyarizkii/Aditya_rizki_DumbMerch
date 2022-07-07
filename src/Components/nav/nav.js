@@ -3,6 +3,12 @@ import styles from "../../Styling/nav.module.css";
 import dumbmerch from "../../Images/frame.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+// import LoginPage from "../../Pages/login";
+// import RegisterPage from "../../Pages/register";
+// import HomePage from "../../Pages/home";
+// import Detail from "../../Pages/detail";
+// import Profile from "../../Pages/profile";
+// import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 function Nav() {
   const [showLinks, setShowLinks] = useState(false);
@@ -14,7 +20,9 @@ function Nav() {
   return (
     <div className={styles.Navbar}>
       <div className={styles.leftNav}>
+
         <img src={dumbmerch} alt="Dumbmerch logo" />
+
       </div>
       <div className={styles.rightNav}>
         <div className={styles.links} id={showLinks ? "hidden" : ""}>
