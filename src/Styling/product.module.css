@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    background-color: black;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:white
+}
+
+.container{
+    width: 100%;
+    height: 90vh;
+}
+
+.catContainer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.contentTable{
+    color: white;
+    border-collapse: collapse;
+    min-width: 80rem;
+    margin: 2.25rem 0;
+    font-size: 1.2rem
+}
+
+.contentTable thead tr{
+    padding: 0.7rem 0.2rem;
+    background-color: #303030;
+}
+
+.contentTable th,
+.contentTable td{
+    padding: 0.8rem 0.2rem;
+}
+
+.contentTable tbody tr{
+    border-bottom: 1px solid grey
+}
+
+.contentTable tbody tr:nth-of-type(odd){
+    background-color: #232323;
+}
+
+.contentTable tbody tr:nth-of-type(even){
+    background-color: #303030 !important;
+}
+
+.contentTable tbody tr:last-of-type{
+    border-bottom: #303030
+}
+
+.contentTable button{
+    margin: 0rem 0.5rem;
+    border-radius: 0.15rem
+}
+
+.edit{
+    color: white;
+    background-color: #56C05A;
+}
+
+.delete{
+    color: white;
+    background-color: #F74D4D;
+}

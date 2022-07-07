@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import styles from "../../Styling/nav.module.css";
 import dumbmerch from "../../Images/frame.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,31 +9,34 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 // import Detail from "../../Pages/detail";
 // import Profile from "../../Pages/profile";
 // import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
 function Nav() {
-  const [showLinks, setShowLinks] = useState(false);
-
-  const handleClick = () => {
-    !showLinks ? setShowLinks(false) : setShowLinks(true);
-  };
-
+  const isLogin = true;
   return (
     <div className={styles.Navbar}>
       <div className={styles.leftNav}>
-
-        <img src={dumbmerch} alt="Dumbmerch logo" />
-
+        <NavLink to="/home">
+          <img src={dumbmerch} alt="Dumbmerch logo" />
+        </NavLink>
       </div>
       <div className={styles.rightNav}>
-        <div className={styles.links} id={showLinks ? "hidden" : ""}>
-          <a href="/">Complain</a>
-          <a href="/">Profile</a>
-          <a href="/">Logout</a>
+        <div className={styles.links}>
+          <NavLink to="/complain">Complain</NavLink>
+          {isLogin ? (
+            <div className={styles.links}>
+              <NavLink to="/category">Category</NavLink>
+              <NavLink to="/product">Product</NavLink>
+            </div>
+          ) : (
+            <NavLink to="/profile">Profile</NavLink>
+          )}
+          <NavLink to="/">Log out</NavLink>
         </div>
 
         <label htmlFor="#Bars" className={styles.Bars}>
           <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-          <button id="Bars" onClick={handleClick}></button>
+          <button id="Bars"></button>
         </label>
       </div>
     </div>

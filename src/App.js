@@ -4,6 +4,7 @@ import HomePage from "./Pages/home";
 import Detail from "./Pages/detail";
 import Profile from "./Pages/profile";
 import Category from "./Pages/category"
+import Product from "./Pages/product"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route path="/detail" element={<Detail/>}></Route>
       <Route path="/profile" element={<Profile/>}></Route>
       <Route path="/category" element={<Category/>}></Route>
+      <Route path="/product" element={<Product/>}></Route>
     </Routes>
   </Router>
 }
