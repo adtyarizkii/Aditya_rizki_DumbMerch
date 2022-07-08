@@ -2,31 +2,32 @@
 
 body{
     background-color: black;
-    /* font-size: 62.5%; */
+    font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
 }
 
 .container{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 
 .catContainer{
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    /* position: absolute; */
 }
 
 .contentTable{
     border-collapse: collapse;
     min-width: 80rem;
     margin: 2.25rem 0;
-    font-size: 1.2rem
+    font-size: 1.2rem;
+    color: white;
 }
 
 .contentTable thead tr{
-    color: white;
     padding: 0.7rem 0.2rem;
     background-color: #303030;
 }
@@ -34,7 +35,6 @@ body{
 .contentTable th,
 .contentTable td{
     padding: 0.8rem 0.2rem;
-    color: white;
 }
 
 .contentTable tbody tr{
@@ -66,4 +66,49 @@ body{
 .delete{
     color: white;
     background-color: #F74D4D;
+}
+
+.editContainer{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.editCatContainer{
+    position: relative;
+    top: -10%;
+    width: 100%;
+    padding: 0rem 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: black;
+    margin: auto
+}
+
+.editCatContainer h1{
+    font-weight: bold;
+    color: white;
+}
+
+.editCatContainer input{
+    background-color: #303030;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.editCatContainer button{
+    padding: 0.5rem 0;
+    background-color: #56C05A;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    font-size: 1rem
 }

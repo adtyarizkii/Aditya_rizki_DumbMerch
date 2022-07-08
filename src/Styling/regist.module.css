@@ -19,6 +19,7 @@ button{
 /* Login card */
 
 .loginContainer{
+    /* background-color: red; */
     position: relative;
     top: 10%;
     width: 70%;
@@ -36,7 +37,7 @@ button{
     margin: 0;
     padding: 2rem;
     background-color: #181818;
-    height: 25rem
+    height: 25rem;
 }
 
 .loginCard h1{
@@ -47,7 +48,7 @@ button{
 .loginCard .cardForm{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .loginCard .cardForm input{
@@ -63,7 +64,7 @@ button{
     border-radius: 0.5rem;
     background-color: #F74D4D;
     color: white;
-    margin-top: 1.2rem
+    margin-top: 2rem
 }
 
 .loginCard .cardForm ::placeholder{
@@ -76,7 +77,8 @@ button{
 /* Login content */
 
 .loginContent{
-    flex:60%
+    /* background-color: green; */
+    flex: 60%;
 }
 
 .contentLogo img{
@@ -92,7 +94,6 @@ button{
 
 .contentHeading h1{
     font-size: 3rem;
-    margin-bottom: 1.8rem;
 }
 
 .contentDesc{
@@ -110,7 +111,7 @@ button{
     color: white;
     padding: 0.2rem 2rem;
     border-radius: 0.4rem;
-    background-color: black;
+    background-color: black 
 }
 
 .contentRegister{

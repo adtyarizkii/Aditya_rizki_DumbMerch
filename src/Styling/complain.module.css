@@ -1,0 +1,179 @@
+p{
+    color: white
+}
+
+.container{
+        width: 100%;
+        height: 100vh;
+}
+
+.chatContainer{
+    display: flex;
+    margin-top: 5rem
+}
+
+.userList{
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.userList .chatList{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1rem;
+    background-color: #202020
+}
+
+.userList .chatList:hover{
+    background-color: #303030;
+    cursor: pointer;
+}
+
+.userList .chatList .chat{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem
+}
+
+.userList .chatList .chat p:global(#username){
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.userList .chatList .chat p{
+    margin: 0 !important;
+    font-size: 0.7rem;
+}
+
+.userList .chatList img{
+    width: 3rem;
+    object-fit: cover;
+    height: 3rem;
+    border-radius: 2rem;
+}
+
+.vLine{
+    width:0.2rem;
+    height: 100vh;
+    background-color: #303030;
+    position: absolute;
+    top: 0;
+    left: 26.7rem;
+}
+
+.hLine{
+    height: 0.1rem;
+    width:100%;
+    background-color: #303030;
+}
+
+.chatRoom{
+    flex: 70%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.chatRoom{
+    display: flex;
+    height: 80vh;
+    gap: 1rem;
+    padding: 0rem 1rem;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.chatRoom .chatBox{
+    width: 70%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 3rem;
+    right: 0;
+}
+
+.chatRoom .chatBox img{
+    width: 2rem;
+    object-fit: cover;
+    height: 2rem;
+    border-radius: 2rem;
+}
+
+.chatInput{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.chatInput input{
+    width: 90%;
+    background-color: #303030;
+    border: none;
+    padding: 0.8rem 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 0.7rem;
+    color:white;
+}
+
+.box{
+	width: 90%;
+	height: 2rem;
+	/* border: solid black; */
+    padding: 0rem 2.5rem;
+	position: relative;
+    margin-right: 4rem
+}
+
+.dialog1{
+  	height: 2rem;
+  	width: auto;
+  	background-color: #303030;
+  	position: absolute;
+  	border-radius: 0.5rem;
+    padding: 0.4rem 0.5rem;
+}
+
+.dialog1 p{
+    font-size: 0.8rem
+}
+
+.leftpoint{
+	width: 0;
+	height: 0;
+	border-left: 1vh solid transparent;
+	border-right: 1vh solid transparent;
+	border-top: 3vh solid #303030;
+	position: absolute;
+	top: 0.25rem;
+	left: -1rem;
+	transform: rotate(90deg);
+}
+
+.dialog2{
+  	height: 2rem;
+  	width: auto;
+  	background-color: #303030;
+  	position: absolute;
+  	border-radius: 0.5rem;
+  	padding: 0.4rem 0.5rem;
+    right: 0
+}
+
+.dialog2 p{
+    font-size: 0.8rem
+}
+
+.rightpoint{
+	width: 0;
+	height: 0;
+	border-left: 1vh solid transparent;
+	border-right: 1vh solid transparent;
+	border-top: 3vh solid #303030;
+	position: absolute;
+	top: 0.25rem;
+	right: -1rem;
+	transform: rotate(-90deg);
+}

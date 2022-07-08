@@ -1,6 +1,6 @@
 import styles from "../../Styling/regist.module.css";
 import dumbmerch from "../../Images/frame.png";
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 
 function RegContent() {
@@ -17,8 +17,8 @@ function RegContent() {
           Go shopping for merchandise, just go to dumb merch shopping. The
           biggest merchadise in <b style={{ color: "white" }}>Indonesia</b>
         </p>
-        <button className={styles.contentLogin}>Login</button>
-        <button className={styles.contentRegister}>Register</button>
+        <Link to="/login"><button className={styles.contentLogin}>Login</button></Link>
+        <Link to="/register"><button className={styles.contentRegister}>Register</button></Link>
       </div>
     </div>
   );
